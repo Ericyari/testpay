@@ -2,54 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UPI Payment Links</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       padding: 20px;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       height: 100vh;
       margin: 0;
-      background-color: #f4f4f4;
     }
-    .button-container {
-      text-align: center;
+
+    div {
+      margin: 20px 0;
     }
-    .button-container div {
-      margin: 20px 0; /* Increased space between buttons */
-    }
+
     a {
       background-color: #007BFF;
       color: white;
-      padding: 20px 40px; /* Increased padding to make buttons larger */
+      padding: 15px 30px; /* Larger padding for bigger buttons */
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 5px;
       display: inline-block;
-      font-size: 18px; /* Larger font size */
-      width: 100%;
-      max-width: 300px; /* Button width restriction */
-      transition: background-color 0.3s ease;
+      text-align: center;
+      width: 100%; /* Full width on smaller screens */
+      max-width: 300px; /* Max width for larger screens */
     }
+
     a:hover {
       background-color: #0056b3;
+    }
+
+    /* Media query for screens smaller than 768px (for mobile and tablets) */
+    @media (max-width: 768px) {
+      a {
+        padding: 20px 40px;
+        font-size: 16px; /* Larger font size for readability */
+      }
     }
   </style>
 </head>
 <body>
 
-  <div class="button-container">
-    <div><a target="_blank" href="upi://pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20" type="button">UNIVERSAL</a></div>
+  <div><a target="_blank"
+    href="upi://pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20"
+    type="button">UNIVERSAL</a></div>
 
-    <div><a target="_blank" href="phonepe://pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20" type="button">PhonePe</a></div>
+  <div><a target="_blank"
+    href="phonepe://pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20"
+    type="button">PhonePe</a></div>
 
-    <div><a target="_blank" href="paytmmp://pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20" type="button">PayTM</a></div>
+  <div><a target="_blank"
+    href="paytmmp://pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20"
+    type="button">PayTM</a></div>
 
-    <div><a target="_blank" href="gpay://upi/pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20" type="button">GPay</a></div>
+  <div><a target="_blank"
+    href="gpay://upi/pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20"
+    type="button">GPay</a></div>
 
-    <div><a target="_blank" href="whatsapp://send?text=upi/pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20" type="button">WhatsApp</a></div>
-  </div>
+  <div><a target="_blank"
+    href="whatsapp://send?text=upi/pay?cu=INR&pa=9136087030m%40pnb&pn=SHREE%20RAM%20ENTERPRISES&am=150.20"
+    type="button">WhatsApp</a></div>
 
 </body>
 </html>
