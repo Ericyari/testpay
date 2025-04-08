@@ -14,10 +14,11 @@
       height: 100vh;  /* Full height of the viewport */
       margin: 0;
       padding: 20px;
+      background-color: #f4f4f4; /* Light background color */
     }
 
     div {
-      margin: 10px 0;
+      margin: 15px 0;  /* Increased margin for more space between buttons */
     }
 
     a {
@@ -26,10 +27,11 @@
       padding: 15px 30px; /* Larger padding for bigger buttons */
       text-decoration: none;
       border-radius: 5px;
-      display: inline-block;
+      display: block;  /* Makes the buttons block-level to center properly */
       text-align: center;
       width: 100%; /* Full width on smaller screens */
-      max-width: 300px; /* Max width for larger screens */
+      max-width: 350px; /* Max width for larger screens */
+      font-size: 18px; /* Increase font size for better visibility */
     }
 
     a:hover {
@@ -40,7 +42,7 @@
     @media (max-width: 768px) {
       a {
         padding: 20px 40px;
-        font-size: 16px; /* Larger font size for readability */
+        font-size: 18px; /* Larger font size for readability */
       }
     }
   </style>
