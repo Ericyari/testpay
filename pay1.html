@@ -1,56 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>UPI Payment Links</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-
-    .container {
-      text-align: center;
-    }
-
-    a {
-      background-color: #007BFF;
-      color: white;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
-      display: inline-block;
-      margin: 15px auto;
-      max-width: 90%;
-      width: 300px;
-    }
-
-    a:hover {
-      background-color: #0056b3;
-    }
-
-    @media (max-width: 768px) {
-      a {
-        padding: 18px 30px;
-        font-size: 18px;
-        width: 90%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonePe Payment Button</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            font-family: 'Inter', sans-serif;
+        }
+        .pay-button {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .pay-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-
-  <div class="container">
-    <a target="_blank" href="upi://pay?pa=openskytradebizsol334232@ypbiz&pn=OPENSKY+TRADEBIZ+SOLUTIONS+PRIVATE+LIMITED&cu=INR&tn=Pay+to+OPENSKY+TRADEBIZ+SOLUTIONS+PRIVATE+LIMITED&am=225&mc=5816&mode=04&tr=AIRPAY924176236&ver=1">Pay - 225 INR</a>
-  </div>
-
+    <a href="phonepe://pay?pa=OMPRAKASHTRADERS311@iob&pn=omprakashtraders&am=200&tn=F7Qla&cu=INR" class="pay-button">Pay - 200 INR</a>
 </body>
 </html>
