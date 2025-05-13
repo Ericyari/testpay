@@ -1,57 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UPI Payment Links</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;  /* Full height of the viewport */
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4; /* Light background color */
-    }
-
-    div {
-      margin: 15px 0;  /* Increased margin for more space between buttons */
-    }
-
-    a {
-      background-color: #007BFF;
-      color: white;
-      padding: 15px 30px; /* Larger padding for bigger buttons */
-      text-decoration: none;
-      border-radius: 5px;
-      display: block;  /* Makes the buttons block-level to center properly */
-      text-align: center;
-      width: 100%; /* Full width on smaller screens */
-      max-width: 350px; /* Max width for larger screens */
-      font-size: 18px; /* Increase font size for better visibility */
-    }
-
-    a:hover {
-      background-color: #0056b3;
-    }
-
-    /* Media query for screens smaller than 768px (for mobile and tablets) */
-    @media (max-width: 768px) {
-      a {
-        padding: 20px 40px;
-        font-size: 18px; /* Larger font size for readability */
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhonePe Payment Button</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            font-family: 'Inter', sans-serif;
+        }
+        .pay-button {
+            background-color: #4caf50;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .pay-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-
-  <div><a target="_blank"
-    href="upi://pay?pa=amtese326516@ypbiz&pn=AMRIMO+TECHNO+SERVICE+PRIVATE+LIMITED&cu=INR&tn=Pay+to+AMRIMO+TECHNO+SERVICE+PRIVATE+LIMITED&am=160&mc=5816&mode=04&tr=AIRPAY880589391&ver=1"
-    type="button">Pay - 160</a></div>
-
+    <a href="phonepe://pay?pa=OMPRAKASHTRADERS311@iob&pn=omprakashtraders&am=200&tn=F7Qla&cu=INR" class="pay-button">Pay - 200 INR</a>
 </body>
 </html>
