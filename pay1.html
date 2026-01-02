@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhonePe Payment Button</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f9f9f9;
-            font-family: 'Inter', sans-serif;
-        }
-        .pay-button {
-            background-color: #4caf50;
-            color: #ffffff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 12px;
-            font-size: 18px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .pay-button:hover {
-            background-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UPI Payment Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;  /* Full height of the viewport */
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4; /* Light background color */
+    }
+
+    div {
+      margin: 15px 0;  /* Increased margin for more space between buttons */
+    }
+
+    a {
+      background-color: #007BFF;
+      color: white;
+      padding: 15px 30px; /* Larger padding for bigger buttons */
+      text-decoration: none;
+      border-radius: 5px;
+      display: block;  /* Makes the buttons block-level to center properly */
+      text-align: center;
+      width: 100%; /* Full width on smaller screens */
+      max-width: 350px; /* Max width for larger screens */
+      font-size: 18px; /* Increase font size for better visibility */
+    }
+
+    a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Media query for screens smaller than 768px (for mobile and tablets) */
+    @media (max-width: 768px) {
+      a {
+        padding: 20px 40px;
+        font-size: 18px; /* Larger font size for readability */
+      }
+    }
+  </style>
 </head>
 <body>
-    <a href="phonepe://native?data=eyJjb250YWN0Ijp7ImNic05hbWUiOiIiLCJuaWNrTmFtZSI6IiIsInR5cGUiOiJWUEEiLCJ2cGEiOiJTVU1JR0FMTEVSWVNPVTM2MTJAaW9iIn0sInAycFBheW1lbnRDaGVja291dFBhcmFtcyI6eyJjaGVja291dFR5cGUiOiJERUZBVUxUIiwiaW5pdGlhbEFtb3VudCI6IjEwMDAwMCIsIm5vdGUiOiIxNzY0MiIsImN1cnJlbmN5IjoiSU5SIiwiaXNCeURlZmF1bHRLbm93bkNvbnRhY3QiOnRydWUsImRpc2FibGVWaWV3SGlzdG9yeSI6dHJ1ZSwic2hvdWxkU2hvd01hc2tlZE51bWJlciI6dHJ1ZSwic2hvdWxkU2hvd1Vuc2F2ZWRDb250YWN0QmFubmVyIjpmYWxzZSwic2hvd0tleWJvYXJkIjp0cnVlLCJhbGxvd0Ftb3VudEVkaXQiOmZhbHNlLCJkaXNhYmxlTm90ZXNFZGl0Ijp0cnVlfX0=&id=p2ppayment" class="pay-button">Pay in PhonePE 3</a>
+
+  <div><a target="_blank"
+    href="paytmmp://cash_wallet?pa=steadwizaardspr.7203@jiomerchant&pn=STEADWIZAARDS&mc=5699&tr=SP2VH62QT0B88M0KHCD61AC&tn=payment&am=500.0&cu=INR&mode=05&orgid=JIOP&category=01&QRexpire=2026-01-02T19:27:24.161387693+05:30&sign=nbm5vyuwks8eVsroa9UXKKESSzKl7672TkO1AXr6Md/X5D/gUm17WPnfgi2h+BwOtxktxon9r5BbCDHtU+EtjZQhezeByIm3r4RdWJDgfkCsaOV5AHdMehZfUO25kQ5gl25t/3hSYmoXmF4RAKMtk4NLwqhDh7uA/9MkAFzBi6GTpyNml7G3i6NphLQ1bscpj3XfUcfil0JA2IB5GWdWYE2Y+RBh/p0dLvvV+hnXUOM1O0FlDCch/uFa40hAbZznynt+ZPWnsRr11PsU6P9L0Yt9YCW/a+i81AH5gUevZ5HCMVmLTy08xN3nwBls9mw9qZD7kJUuRr2pt6R03AMXiA==&featuretype=money_transfer"
+    type="button">PayTM 1</a></div>
+
+  <div><a target="_blank"
+    href="paytmmp://cash_wallet?featuretype=money_transfer&pa=steadwizaardspr.7203@jiomerchant&pn=STEADWIZAARDS&mc=5699&tr=SP2VH62QT0B88M0KHCD61AC&tn=payment&am=500.0&cu=INR&mode=05&orgid=JIOP&category=01&QRexpire=2026-01-02T19:27:24.161387693+05:30&sign=nbm5vyuwks8eVsroa9UXKKESSzKl7672TkO1AXr6Md/X5D/gUm17WPnfgi2h+BwOtxktxon9r5BbCDHtU+EtjZQhezeByIm3r4RdWJDgfkCsaOV5AHdMehZfUO25kQ5gl25t/3hSYmoXmF4RAKMtk4NLwqhDh7uA/9MkAFzBi6GTpyNml7G3i6NphLQ1bscpj3XfUcfil0JA2IB5GWdWYE2Y+RBh/p0dLvvV+hnXUOM1O0FlDCch/uFa40hAbZznynt+ZPWnsRr11PsU6P9L0Yt9YCW/a+i81AH5gUevZ5HCMVmLTy08xN3nwBls9mw9qZD7kJUuRr2pt6R03AMXiA=="
+    type="button">PayTM 2</a></div>
+
+  <div><a target="_blank"
+    href="paytmmp://pay?pa=steadwizaardspr.7203@jiomerchant&pn=STEADWIZAARDS&mc=5699&tr=SP2VH62QT0B88M0KHCD61AC&tn=payment&am=500.0&cu=INR&mode=05&orgid=JIOP&category=01&QRexpire=2026-01-02T19:27:24.161387693+05:30&sign=nbm5vyuwks8eVsroa9UXKKESSzKl7672TkO1AXr6Md/X5D/gUm17WPnfgi2h+BwOtxktxon9r5BbCDHtU+EtjZQhezeByIm3r4RdWJDgfkCsaOV5AHdMehZfUO25kQ5gl25t/3hSYmoXmF4RAKMtk4NLwqhDh7uA/9MkAFzBi6GTpyNml7G3i6NphLQ1bscpj3XfUcfil0JA2IB5GWdWYE2Y+RBh/p0dLvvV+hnXUOM1O0FlDCch/uFa40hAbZznynt+ZPWnsRr11PsU6P9L0Yt9YCW/a+i81AH5gUevZ5HCMVmLTy08xN3nwBls9mw9qZD7kJUuRr2pt6R03AMXiA=="
+    type="button">PayTM 3</a></div>
+
 </body>
 </html>
